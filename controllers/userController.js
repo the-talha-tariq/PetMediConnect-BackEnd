@@ -53,7 +53,7 @@ const authController = async (req,res)=>{
     }
   } catch (error) {
     console.log(error)
-    return res.status(500).send({message:"Auth Error",success:false,error})
+    return res.status(500).send({message:"Authentication Error",success:false,error})
   }
 }
 module.exports = { loginController, registerController,authController };
